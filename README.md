@@ -4,7 +4,7 @@ Este proyecto constituye la entrega del **Examen Final** para la materia de Desa
 
 Por otra parte se aplica el uso de Modelos en Django, uso de bases de datos relacionales y seguridad avanzada mediante el protocolo OAuth2.
 
-Además el estudiante aprenderá el manejo de Django desde el desarrollo de API REST, uso de serializadores complejos, manejo de imágenes en Base64 y configuración de permisos mediante Scopes.
+Además el manejo de Django desde el desarrollo de API REST, uso de serializadores complejos, manejo de imágenes en Base64 y configuración de permisos mediante Scopes.
 
 ## Datos del estudiante
 - **Nombre:** Carlos Alejandro Tene Mora
@@ -96,10 +96,6 @@ python manage.py migrate
 ~~~
 pip freeze > requirements.txt
 ~~~
-
-# Nota
-Para los siguientes pasos se deberán seguir las **instrucciones del docente en clase**. No olvides que puedes contactarlo a <paperez@puce.edu.ec>
-
 
 # Configuración de Base de Datos para el Examen
 
