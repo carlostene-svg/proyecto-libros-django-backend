@@ -5,6 +5,7 @@ import base64
 import uuid
 
 class LibroSerializer(serializers.ModelSerializer):
+    autor_nombre = serializers.ReadOnlyField(source='autor.nombre')
     portada = serializers.CharField(required=False, allow_null=True)
 
     class Meta:
@@ -25,7 +26,7 @@ class AutorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Autor
-        fields = ['id', 'nombre', 'fecha_nacimiento', 'nacionalidad', 'bibliografia', 'imagen', 'libros']
+        fields = ['id', 'nombre', 'fecha_nacimiento', 'nacionalidad', 'biografia', 'imagen', 'libros']
 
     def validate_imagen(self, value):
         if value and ';base64,' in value:

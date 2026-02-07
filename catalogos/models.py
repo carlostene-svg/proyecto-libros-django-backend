@@ -5,7 +5,7 @@ class Autor(models.Model):
     nombre = models.CharField(max_length=100)
     fecha_nacimiento = models.DateField()
     nacionalidad = models.CharField(max_length=50, blank=True, null=True)
-    bibliografia = models.TextField(blank=True)
+    biografia = models.TextField(blank=True)
     imagen = models.ImageField(upload_to='autores/', blank=True, null=True)
 
     def __str__(self):
